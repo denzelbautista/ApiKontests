@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concursos de Programación</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <h1>Concursos de Programación</h1>
+    </header>
+
+    <nav id="navbar">
+      <div class="navbar__item" onclick="showContent(0)">Home</div>
+      <div class="navbar__item" onclick="showContent(1)">Sites</div>
+      <div class="navbar__item" onclick="showContent(2)">CodeForces</div>
+      <div class="navbar__item" onclick="showContent(3)">AtCoder</div>
+      <div class="navbar__item" onclick="showContent(4)">CodeChef</div>
+      <div class="navbar__item" onclick="showContent(5)">HackeRank</div>
+    </nav>
+
+    <div id="body">
+      <section class="body__item">
+        <h1>¡Bienvenido!</h1>
+        <h2>
+          Se que es raro que tengas que presionar home para que te muestre la
+          pagina de inicio y si no lo haces no te muestra nada, pero bueno
+        </h2>
+        <h3>
+          Aqui encontrarás diversa información sobre sitios de concursos de
+          programacion, ademas podrás ver, de acuerdo al sitio de tu
+          preferencia, los concursos que estan por venir
+        </h3>
+      </section>
+      <section class="body__item">
+        <h1>Sitios</h1>
+        <p>
+          Dale click a ver más para ir a las páginas web de cada uno de los
+          sitios
+        </p>
+        <div id="card-container">
+          <!-- Las tarjetas se agregarán aquí dinámicamente -->
+        </div>
+      </section>
+
+      <section class="body__item">
+        <h1>CodeForces</h1>
+        <p>Concursos de Codeforces</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Logo</th>
+              <th>Contest Name</th>
+              <th>Start</th>
+              <th>End</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody id="cfTableBody"></tbody>
+        </table>
+      </section>
+
+      <section class="body__item">
+        <h1>AtCoder</h1>
+        <p>Concursos de AtCoder</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Logo</th>
+              <th>Contest Name</th>
+              <th>Start</th>
+              <th>End</th>
+              <th>Rated Range</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody id="acTableBody"></tbody>
+        </table>
+      </section>
+
+      <section class="body__item">
+        <h1>CodeChef</h1>
+        <p>Concursos de CodeChef</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Logo</th>
+              <th>Contest Name</th>
+              <th>Start</th>
+              <th>End</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody id="ccTableBody"></tbody>
+        </table>
+      </section>
+
+      <section class="body__item">
+        <h1>HackerRank</h1>
+        <p>Concursos de HackerRank</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Logo</th>
+              <th>Contest Name</th>
+              <th>Start</th>
+              <th>End</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody id="hrTableBody"></tbody>
+        </table>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
